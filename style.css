@@ -1,0 +1,111 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/*===GENERALES===*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+}
+
+.post {
+    width: 550px;
+    background-color: white;
+}
+
+
+/*===POST-HEADER===*/
+.post-header {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .post-header-text p {
+        color: #666;
+    }
+
+    i:first-child {
+        font-size: 35px;
+    }
+
+    i:last-child {
+        margin-left: auto;
+        font-size: 35px;
+    }
+}
+
+
+/*===POST-IMG===*/
+.post img {
+    width: 100%;
+    display: block;
+}
+
+
+/*===POST-BODY===*/
+.post-body {
+    padding: 10px;
+
+    .post-icon {
+        display: flex;
+        gap: 8px;
+    }
+
+    .post-icon, p {
+        margin-bottom: 10px;
+    }
+
+    .post-icon i:last-child {
+        margin-left: auto;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/*===EXTRAS===*/
+/*Cambio de cursor*/
+i {
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+/*Eliminacion de transicion para los iconos de post-header-icon*/
+i:not(.post-header-icon) {
+    transition: color 0.3s ease-in-out;
+}
+
+/*Cambio de colores en iconos de post-body post-icon*/
+.post-icon .fa-heart:hover {
+    color: red;
+}
+
+.post-icon .fa-comment:hover {
+    color: blue;
+}
+
+.post-icon .fa-paper-plane:hover {
+    color: green;
+}
+
+.post-icon .fa-bookmark:hover {
+    color: gold;
+}
